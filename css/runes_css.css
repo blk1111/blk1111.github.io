@@ -322,13 +322,21 @@ div > h3{
 	margin-top: 60px;
 	margin-bottom: 60px;
 }
-.card-c{
-	text-align: center;
-}
+
 .rune-text{
-	font-size: 20px;
+	font-size: 15.5px;
 	font-weight: 500;
 	line-height: 1.5;
 	white-space: nowrap;
-	color: #A27B5C
+	color: #6b482b;
+	
+	display:inline;
+	text-align: center;
+}
+.row{
+	padding:15px;
+}
+.card{
+	width: 25rem; 
+	height: 28rem;
 }
