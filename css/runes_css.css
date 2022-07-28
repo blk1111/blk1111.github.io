@@ -337,9 +337,8 @@ div > h3{
 .card{
 	padding: 0px;
 	margin: 0 5px;
-	height: 29rem;
-	width: auto;
-}
-.col-md-3{
 	height: 30rem;
+}
+.col-md-4{
+	height: 32rem;
 }
