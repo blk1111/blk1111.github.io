@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/af3a53bf6a.js" crossorigin="anonymous"></script>
+
+    <!--bootstrap連結網址-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <link href="../css/runes_css.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&family=Open+Sans:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+
+    <title>Diablo II</title>
+</head>
+
+<body background="../pictures/black.jpg"
+    style=" background-repeat:no-repeat ;background-size:100% 100%; background-attachment: fixed;">
+
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <!--標題logo-->
+                        <img src="../pictures/d2r.png">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-warning" aria-current="page"
+                                    href="https://blk1111.github.io/">首頁</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-warning" href="#" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    相關連結
+                                </a>
+                                <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="https://news.blizzard.com/zh-tw/diablo2">藍帖消息</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="http://iyazero.tw/Default.htm">易牙居</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="http://www.anhei3.net/English-skill.html">技能模擬器</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="https://d2.lc/IAS/?char=3&charform=2&primaerwaffe=on&waffe=241&barbschwert=-1&infoWaffe1=two-handed+weapon+xxx91;10xxx93;&wIAS1=70&zweitwaffe=0&infoWaffe2=&wIAS2=0&IAS=0&skill=29&fana=0&frenzy=0&wolf=68&tempo=0&holyfrost=0&AnzFPA=5%2F5%2F5%2F5%2F8+frames+per+attack&AnzMax=further+IAS+useless&AnzFre=4.46+attacks+per+second">攻速計算機</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="*/runes.html">符文組</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-warning" href="#" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    職業介紹
+                                </a>
+                                <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">德魯伊</a></li>
+                                    <li><a class="dropdown-item" href="#">刺客</a></li>
+                                    <li><a class="dropdown-item" href="#">死靈法師</a></li>
+                                    <li><a class="dropdown-item" href="#">野蠻人</a></li>
+                                    <li><a class="dropdown-item" href="#">法師</a></li>
+                                    <li><a class="dropdown-item" href="#">聖騎士</a></li>
+                                    <li><a class="dropdown-item" href="#">亞馬遜</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-3"><a href="next/rune_arms.html">
+                            <p>武器</p>
+                        </a></div>
+                    <div class="col-3"><a href="#l2">
+                            <p>頭盔</p>
+                        </a></div>
+                    <div class="col-3"><a href="#l3">
+                            <p>衣服</p>
+                        </a></div>
+                    <div class="col-3"><a href="#l4">
+                            <p>盾牌</p>
+                        </a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!--符文组-->
+    <div class="container text-center">
+        <h3>武器</h3><br>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3  row-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title">無限</h5>
+                            <div>
+                                <p class="rune-text">
+                                    貝(30) + 馬爾(23) + 貝(30) + 伊斯特(24)<br>
+                                    有四個凹槽的長斧/矛/亞馬遜長矛<br>
+                                    50% 機率施展等級20連鎖閃電於殺敵之後<br>
+                                    等級12信念靈氣賦予<br>
+                                    +35% 高速跑步<br>
+                                    +255-325% 增強傷害 (變動)<br>
+                                    -45-55% 敵人電抗 (變動)<br>
+                                    40% 機率壓碎打擊<br>
+                                    防止怪物自療<br>
+                                    +0-49 體力 (依角色等級乘0.5)<br>
+                                    30% 更佳機會取得魔法裝備<br>
+                                    等級 21 颶風裝甲 (30 聚氣)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">正義之手</h5>
+                            <div>
+                                <p class="rune-text">
+                                    瑟(29) + 查姆(32) + 安姆(11) + 羅(28)<br>
+                                    有四個凹槽的武器<br>
+                                    當角色升級時100% 機會施展等級36熾烈之徑<br>
+                                    當角色死亡時100% 機會施展等級48隕石<br>
+                                    等級16聖火靈氣賦予<br>
+                                    33% 提升攻擊速度<br>
+                                    280-330% 增強傷害 (變動)<br>
+                                    忽視目標防禦<br>
+                                    7% 生命于擊中時偷取<br>
+                                    -20% 敵人火焰抗性<br>
+                                    20% 致命攻擊<br>
+                                    擊中使怪物盲目<br>
+                                    凍結目標</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">冰凍</h5>
+                            <div>
+                                <p class="rune-text">
+                                    安姆(11) + 夏(13) + 喬(31) + 羅(28)<br>
+                                    有四個凹槽的遠射程武器<br>
+                                    100% 機率當升級時施展等級40暴風雪<br>
+                                    25% 機率打擊時施展等級22霜之新星<br>
+                                    等級18神聖冰凍靈氣賦予<br>
+                                    +20% 增加攻擊準確率<br>
+                                    +140-210% 增強傷害 (變動)<br>
+                                    忽視目標防禦<br>
+                                    抗寒 +25-30% (變動)<br>
+                                    -20% 敵人對冰凍系抗性<br>
+                                    7% 擊中偷命<br>
+                                    20% 致命一擊<br>
+                                    +3-309%額外金錢從怪物身上取得<br>
+                                    (依角色等級決定乘3.125)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title">憤怒</h5>
+                            <div>
+                                <p class="rune-text">
+                                    普爾(21) + 盧姆(17) + 貝(30) + 馬爾(23)<br>
+                                    有四個凹槽的遠射程武器<br>
+                                    打擊時有30%機會施展等級1衰老<br>
+                                    打擊時有5%會施展等級10偷取生命<br>
+                                    +375%對惡魔傷害<br>
+                                    +100對惡魔準確率<br>
+                                    +250-300% 對不死生物的傷害 (變動)<br>
+                                    增加85-120的魔法傷害<br>
+                                    增加41-240的閃電傷害<br>
+                                    20%造成壓碎性打擊<br>
+                                    防止怪物自療<br>
+                                    +10精力<br>
+                                    無法冰凍 </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title">戰爭招喚</h5>
+                            <div>
+                                <p class="rune-text">
+                                    安姆(11) + 拉爾(8) + 馬爾(23) +<br>
+                                    伊司特(24) + 歐姆(27)<br>
+                                    有五個凹槽的武器5<br>
+                                    +1 到所有技能<br>
+                                    40% 提升攻擊速度<br>
+                                    250-290% 增強傷害 (變動)<br>
+                                    加 5-30 火焰傷害<br>
+                                    7% 生命于擊中時偷取<br>
+                                    +2-6 到戰鬥指揮 (變動)<br>
+                                    +1-6 到戰鬥體制 (變動)<br>
+                                    +1-4 到戰嚎 (變動)<br>
+                                    防止怪物自療<br>
+                                    生命恢復速度 +12<br>
+                                    30% 更佳機會取得魔法裝備</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">毒牙</h5>
+                            <div>
+                                <p class="rune-text">
+                                    塔爾(7) + 多爾(14) + 馬爾(23)<br>
+                                    有三個凹槽的武器<br>
+                                    使怪物逃跑 25%<br>
+                                    防止怪物治療<br>
+                                    忽視目標防禦<br>
+                                    7% 偷取法力<br>
+                                    等級15毒爆 (27 聚氣)<br>
+                                    等級13劇毒新星 (11 聚氣)<br>
+                                    +273 毒素傷害,持續 6 秒</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">熱情</h5>
+                            <div>
+                                <p class="rune-text">
+                                    多爾(14) + 歐特(9) + 艾德(2) + 藍姆(20)<br>
+                                    有四個凹槽的武器<br>
+                                    25% 提升攻擊速度<br>
+                                    160-210% 增強傷害 (變動)<br>
+                                    50-80% 額外攻擊準確率加成 (變動)<br>
+                                    +75% 對不死系生物的傷害<br>
+                                    +50 對不死系生物的準確率<br>
+                                    加 1-50 閃電傷害<br>
+                                    +1 到狂戰士<br>
+                                    +1 到白熱<br>
+                                    擊中使怪物盲目<br>
+                                    +1025% 擊中使怪物逃跑<br>
+                                    75% 額外金幣從怪物身上取得<br>
+                                    等級 3 狼獾之心 (12 聚氣)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">思考之聲</h5>
+                            <div>
+                                <p class="rune-text">
+                                    藍姆(20) + 科(18) + 艾爾(1) + 艾德(2)<br>
+                                    有四個凹槽的劍/釘頭槌<br>
+                                    15% 被擊中時施展等級13冰風暴<br>
+                                    18% 被擊中時施展等級20冰尖柱<br>
+                                    +50 攻擊準確率<br>
+                                    +220-350% 對惡魔傷害 (變動)<br>
+                                    +280-300% 對不死生物傷害 (變動)<br>
+                                    +50 對不死生物的準確率<br>
+                                    增加 100-220 冰傷<br>
+                                    -24% 對敵人冰抗<br>
+                                    +10 敏捷<br>
+                                    無法冰凍<br>
+                                    75% 額外金錢於殺敵後取得<br>
+                                    +1 照明範圍</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title">死亡呼吸</h5>
+                            <div>
+                                <p class="rune-text">
+                                    伐克斯(26) + 海爾(15) + 艾爾(1) +<br>
+                                    艾德(2) + 薩德(33) + 愛斯(5)<br>
+                                    有六個凹槽的武器<br>
+                                    每殺死一個敵人50%機會施展等級20劇毒新星<br>
+                                    無法破壞<br>
+                                    60% 提升攻擊速度<br>
+                                    +350-400% 增強傷害 (變動)<br>
+                                    +200% 對不死系生物傷害<br>
+                                    -25% 目標防禦<br>
+                                    +50 到準確率<br>
+                                    +50 對不死系生物的準確率<br>
+                                    7% 法力于擊中時偷取<br>
+                                    12-15% 生命于擊中時偷取 (變動)<br>
+                                    防止怪物自療<br>
+                                    +30 到所有屬性<br>
+                                    +1 到照亮範圍<br>
+                                    需求 -20%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">力量</h5>
+                            <div>
+                                <p class="rune-text">
+                                    安姆(11) + 特爾(3)<br>
+                                    有兩個凹槽的肉搏武器<br>
+                                    35% 增強傷害<br>
+                                    25% 造成壓碎性打擊<br>
+                                    7% 偷取生命<br>
+                                    +2 法力在每殺死一名敵人之後取得<br>
+                                    +20 力量<br>
+                                    +10 體力</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">風</h5>
+                            <div>
+                                <p class="rune-text">
+                                    瑟(29) + 艾爾(1)<br>
+                                    有兩個凹槽的肉搏武器<br>
+                                    擊中敵人時有10% 機會施展等級9龍捲風<br>
+                                    +20% 高速跑步/行走<br>
+                                    40% 提升攻擊速度<br>
+                                    15% 快速再度攻擊<br>
+                                    +120-160% 增強傷害 (變動)<br>
+                                    -50% 目標防禦<br>
+                                    +53 攻擊命中率擊中使怪物盲目<br>
+                                    +1照亮範圍<br>
+                                    等級13 鎌鼬風 (127 聚氣)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">精神</h5>
+                            <div>
+                                <p class="rune-text">
+                                    塔爾(7) + 書爾(10) + 歐特(9) + 安姆(11)<br>
+                                    有四個凹槽的劍<br>
+                                    +2 所有技能<br>
+                                    +25%-35% 高速施展速度 (變動)<br>
+                                    +55% 快速度再攻擊<br>
+                                    +250 對飛射性防禦<br>
+                                    7% 偷取生命<br>
+                                    +3-14冰冷傷害<br>
+                                    +1-50閃電傷害<br>
+                                    +75毒素傷害<br>
+                                    +22 體力<br>
+                                    +89-112 法力 (變動)<br>
+                                    +3-8 魔法吸收 (變動)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title">怨恨</h5>
+                            <div>
+                                <p class="rune-text">
+                                    伊司(6) + 艾爾(1) + 愛斯(5)<br>
+                                    有三個凹槽的肉搏武器<br>
+                                    +33% 增強傷害<br>
+                                    +9 最大傷害值<br>
+                                    100% 撕開傷口機率<br>
+                                    -25% 目標防禦<br>
+                                    -100 目標防禦<br>
+                                    防止怪物治療<br>
+                                    +50 攻擊準確率<br>
+                                    恢復生命 -5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">狂怒</h5>
+                            <div>
+                                <p class="rune-text">
+                                    喬(31) + 古爾(25) + 愛斯(5)<br>
+                                    有三個凹槽的肉搏武器<br>
+                                    +209% 增強傷害<br>
+                                    40% 增加攻擊速度<br>
+                                    防止怪物治療<br>
+                                    66% 撕開傷口機率<br>
+                                    33% 致命攻擊<br>
+                                    忽視目標防禦<br>
+                                    -25% 目標防禦<br>
+                                    20% 額外的攻擊準確率加成<br>
+                                    6% 偷取生命<br>
+                                    +5 狂亂 (限野蠻人)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">榮耀</h5>
+                            <div>
+                                <p class="rune-text">
+                                    安姆(11) + 艾爾(1) + 伊司(6) +<br>
+                                    特爾(3) + 索爾(12)<br>
+                                    有五個凹槽的肉搏武器<br>
+                                    +160% 增強傷害<br>
+                                    +9 最小傷害值<br>
+                                    +9 最大傷害值<br>
+                                    25% 致命攻擊<br>
+                                    +250 攻擊準確率<br>
+                                    +1 所有技能等級<br>
+                                    7% 偷取生命<br>
+                                    生命恢復 +10<br>
+                                    +10 力量<br>
+                                    +1 照亮範圍<br>
+                                    +2 法力在每殺死一名敵人之後取得</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">寂靜</h5>
+                            <div>
+                                <p class="rune-text">
+                                    多爾(14) + 艾德(2) + 海爾(15) +<br>
+                                    伊司特(24) + 特爾(3) + 伐克斯(26)<br>
+                                    有六個凹槽的武器<br>
+                                    200% 增強傷害<br>
+                                    175% 對不死系生物傷害<br>
+                                    需求 -20%<br>
+                                    20% 增加攻擊速度<br>
+                                    +50 對不死系生物準確率<br>
+                                    +2 所有技能等級<br>
+                                    所有抗性 +75%<br>
+                                    20% 快速再度攻擊<br>
+                                    11% 偷取法力<br>
+                                    使怪物逃跑 25%<br>
+                                    使目標盲目<br>
+                                    +2 法力在每殺死一名敵人之後取得<br>
+                                    30% 更佳機會取得魔法裝備</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title">永恆</h5>
+                            <div>
+                                <p class="rune-text">
+                                    安姆(11) + 貝(30) + 伊司特(24) +<br>
+                                    索爾(12) + 瑟(29)<br>
+                                    有五個凹槽的肉搏武器<br>
+                                    無法破壞<br>
+                                    260-310% 增強傷害 (變動)<br>
+                                    +9 到最小傷害<br>
+                                    7% 生命于擊中時偷取<br>
+                                    20% 機會出現壓碎性打擊<br>
+                                    擊中使怪物盲目<br>
+                                    減慢目標 33%<br>
+                                    法力重生 16%<br>
+                                    無法冰凍<br>
+                                    30% 更佳機會取得魔法裝備<br>
+                                    等級 8 重生 (88 聚氣)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">白色</h5>
+                            <div>
+                                <p class="rune-text">
+                                    多爾(14) + 埃歐(16)<br>
+                                    有二個凹槽的魔杖<br>
+                                    擊中使怪物逃跑 25%<br>
+                                    +10 體力<br>
+                                    +3 毒素和白骨技能 (限死靈法師)<br>
+                                    +3 白骨裝甲 (限死靈法師)<br>
+                                    +2 骨矛 (限死靈法師)<br>
+                                    +4 支配骷髏 (限死靈法師)<br>
+                                    法術傷害減少 4<br>
+                                    20% 高速施法<br>
+                                    +13 法力 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">沌頓</h5>
+                            <div>
+                                <p class="rune-text">
+                                    法爾(19) + 歐姆(27) + 烏姆(22)<br>
+                                    有三個凹槽的爪<br>
+                                    擊中敵人時有9% 機會施展等級11冰封球<br>
+                                    擊中敵人時有11% 機會施展等級9充能彈<br>
+                                    35% 提升攻擊速度<br>
+                                    290-340% 增強傷害 (變動)<br>
+                                    加 216-471 魔法傷害<br>
+                                    25% 機會撕裂傷口<br>
+                                    +1 到旋風<br>
+                                    +10 到力量<br>
+                                    +15 生命在每殺一個惡魔後取得</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title">裂縫</h5>
+                            <div>
+                                <p class="rune-text">
+                                    海爾(15) + 科(18) + 藍姆(20) + 古爾(25)<br>
+                                    有四個凹槽的長斧/權仗<br>
+                                    20% 打擊時施展等級16龍捲風<br>
+                                    16% 受攻擊時施展等級21冰封球<br>
+                                    20% 額外攻擊準確率<br>
+                                    增加 160-250 魔法傷害<br>
+                                    增加 60-180 火焰傷害<br>
+                                    +5-10 所有屬性 (變動)<br>
+                                    38% 傷害轉換成法力<br>
+                                    75% 額外金錢取得<br>
+                                    等級 15 鋼鐵石魔 (40 聚氣)<br>
+                                    需求 -20%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title">鋼鐵</h5>
+                            <div>
+                                <p class="rune-text">
+                                    特爾(3) + 艾爾(1)<br>
+                                    有二個凹槽的劍/斧/釘頭錘<br>
+                                    20% 增強傷害<br>
+                                    +3 最小傷害值<br>
+                                    +3 最大傷害值<br>
+                                    +50 攻擊準確率<br>
+                                    50% 撕開傷口機率<br>
+                                    25% 增加攻擊速度<br>
+                                    +2 法力在每殺死一名敵人之後取得<br>
+                                    +1 照亮範圍</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">葉子</h5>
+                            <div>
+                                <p class="rune-text">
+                                    Tir特爾(3) + 拉爾(8)<br>
+                                    有二個凹槽的法杖<br>
+                                    增加 5-30 火焰傷害<br>
+                                    +3 火焰技能<br>
+                                    +3 火彈 (限法師)<br>
+                                    +3 地獄之火 (限法師)<br>
+                                    +3 暖氣 (限法師)<br>
+                                    +2~198防禦(依角色等級)<br>
+                                    +2 法力在每殺死一名敵人之後取得<br>
+                                    +33% 冰冷抗性</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">和風</h5>
+                            <div>
+                                <p class="rune-text">
+                                    歐特(9) + 愛斯(5)<br>
+                                    有二個凹槽的遠射程武器<br>
+                                    +33% 增強傷害<br>
+                                    +66 攻擊準確率<br>
+                                    增加 1-50 閃電傷害<br>
+                                    -25% 目標防禦<br>
+                                    +25 防禦<br>
+                                    25% 高速跑步/行走<br>
+                                    25% 增加攻擊速度<br>
+                                    打擊時有7%機率施展等級1鐮鼬風</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">驕傲</h5>
+                            <div>
+                                <p class="rune-text">
+                                    查姆(32) + 瑟(29) + 埃歐(16) + 羅(28)<br>
+                                    有四個凹槽的長斧/矛/亞馬遜長矛<br>
+                                    25% 機率受攻擊時施展等級17火牆<br>
+                                    等級 16-20 專注靈氣賦予 (變動)<br>
+                                    +260-300% 額外攻擊準確率 (變動)<br>
+                                    +1-99% 對惡魔傷害 (依角色等級乘1)<br>
+                                    增加 50-280 閃電傷害<br>
+                                    20% 致命攻擊<br>
+                                    擊中使目標目盲<br>
+                                    冰凍目標 +3<br>
+                                    +10 體力<br>
+                                    生命補滿 +8<br>
+                                    +1-185% 額外金錢取自怪物<br>
+                                    (依角色等級乘1.875) </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title">王者的慈悲</h5>
+                            <div>
+                                <p class="rune-text">
+                                    安姆(11) + 拉爾(8) + 書爾(10)<br>
+                                    有三個凹槽的劍/權杖<br>
+                                    +100% 增強傷害<br>
+                                    +100% 對惡魔系怪物傷害<br>
+                                    +50% 對不死系生物傷害<br>
+                                    增加 5-30 火焰傷害<br>
+                                    增加 3-14 冰冷傷害 - 凍結目標3秒<br>
+                                    +150 攻擊準確率<br>
+                                    +100 對惡魔系怪物準確率<br>
+                                    +100 對不死系生物準確率<br>
+                                    7% 偷取生命</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">黑色</h5>
+                            <div>
+                                <p class="rune-text">
+                                    書爾(10) + 埃歐(16) + 那夫(4)<br>
+                                    有三個凹槽的棍棒/槌子/釘頭錘<br>
+                                    +120% 增強傷害<br>
+                                    40% 機會出現壓碎性打擊<br>
+                                    +200 攻擊準確率<br>
+                                    增加 3-14 冰冷傷害 - 凍結目標 3 秒<br>
+                                    +10 體力<br>
+                                    +19 毒素傷害,持續 2 秒<br>
+                                    15% 增加攻擊速度<br>
+                                    擊退<br>
+                                    法術傷害減少 2<br>
+                                    等級四屍體爆炸(12聚氣)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">旋律</h5>
+                            <div>
+                                <p class="rune-text">
+                                    夏(13) + 科(18) + 那夫(4)<br>
+                                    有三個凹槽的遠射程武器<br>
+                                    +50% 增強傷害<br>
+                                    300% 對不死系生物傷害<br>
+                                    +3 弓與十字弓技能 (限亞馬遜)<br>
+                                    +3 致命攻擊 (限亞馬遜)<br>
+                                    +3 閃避 (限亞馬遜)<br>
+                                    +3 慢速箭 (限亞馬遜)<br>
+                                    20% 增加攻擊速度<br>
+                                    +10 敏捷<br>
+                                    擊退</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">鳳凰</h5>
+                            <div>
+                                <p class="rune-text">
+                                    伐克斯(26) + 伐克斯(26) + 羅(28) + 喬(31)<br>
+                                    有四個凹槽的武器<br>
+                                    100% 機率當你升級時施展等級40熾烈之徑<br>
+                                    40% 打擊時施展等級22火風暴<br>
+                                    等級 10-15 救贖靈氣賦予 (變動)<br>
+                                    忽視目標防禦<br>
+                                    14% 偷取法力<br>
+                                    20% 致命攻擊<br>
+                                    +350-400% 增強傷害 (變動)<br>
+                                    -28%對敵人火焰系抗性<br>
+                                    +10% 防禦強化<br>
+                                    +350-400 對遠距防禦 (變動)<br>
+                                    +15-21 火焰吸收 (變動)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title">新月</h5>
+                            <div>
+                                <p class="rune-text">
+                                    夏(13) + 烏姆(22) + 特爾(3)<br>
+                                    有三個凹槽的斧/劍/長炳戰斧<br>
+                                    擊中敵人時有10%機會施展等級17連鎖閃電<br>
+                                    擊中敵人時有7%機會施展等級13靜態力場<br>
+                                    20% 提升攻擊速度<br>
+                                    180-220% 增強傷害 (變動)<br>
+                                    忽視目標防禦<br>
+                                    -35% 到敵人閃電抗性<br>
+                                    25% 機會撕裂傷口<br>
+                                    +9-11 魔法吸收 (變動)<br>
+                                    +2 法力在每殺一個敵人後取得<br>
+                                    等級 18 召喚鬼狼 (30 聚氣) </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">神聖雷擊</h5>
+                            <div>
+                                <p class="rune-text">
+                                    愛斯(5) + 拉爾(8) + 歐特(9) + 塔爾(7)<br>
+                                    有四個凹槽的權杖<br>
+                                    +60% 增強傷害<br>
+                                    -25% 目標防禦<br>
+                                    增加 5-30 火焰傷害<br>
+                                    增加 21-110 閃電傷害<br>
+                                    +75 毒素傷害,持續 5 秒<br>
+                                    +10 最大傷害值<br>
+                                    +60%閃電抗性<br>
+                                    +5% 最大閃電抗性<br>
+                                    +3 神聖衝擊 (限聖騎士)<br>
+                                    等級7連鎖閃電 (60 聚氣)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">記憶</h5>
+                            <div>
+                                <p class="rune-text">
+                                    盧姆(17) + 埃歐(16) + 索爾(12) + 愛斯(5)<br>
+                                    有四個凹槽的法杖<br>
+                                    +3 法師技能<br>
+                                    33% 高速施法<br>
+                                    增加法力上限 20%<br>
+                                    +3 能量護盾 (限法師)<br>
+                                    +2 靜態力場 (限法師)<br>
+                                    +10 精力<br>
+                                    +10 體力<br>
+                                    +9 最小傷害值<br>
+                                    -25% 目標防禦<br>
+                                    法術傷害減少 7<br>
+                                    +50% 增加防禦 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title">遵從</h5>
+                            <div>
+                                <p class="rune-text">
+                                    海爾(15) + 科(18) + 書爾(10) +<br>
+                                    愛斯(5) + 法爾(19)<br>
+                                    有五個凹槽的長斧/矛/亞馬遜長矛<br>
+                                    殺敵後30%機率施展21級強化<br>
+                                    40%快速再度攻擊<br>
+                                    +370% 增強傷害<br>
+                                    -25%目標防禦<br>
+                                    +3-14 冰冷傷害<br>
+                                    -25%對敵人火焰系抗性<br>
+                                    40% 壓碎打擊<br>
+                                    +200-300 防禦 (變動)<br>
+                                    +10 力量<br>
+                                    +10 敏捷<br>
+                                    所有抗性 +20-30 (變動)<br>
+                                    -20%需求 </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title">弒君者</h5>
+                            <div>
+                                <p class="rune-text">
+                                    馬爾(23) + 烏姆(22) + 古爾(25) + 法爾(19)<br>
+                                    有四個凹槽的劍/斧<br>
+                                    30% 提升攻擊速度<br>
+                                    230-270% 增強傷害 (變動)<br>
+                                    -25% 目標防禦<br>
+                                    20% 額外攻擊準確率加成<br>
+                                    33% 機會出現壓碎性打擊<br>
+                                    50% 機會撕裂傷口<br>
+                                    +1 到復仇<br>
+                                    防止怪物自療<br>
+                                    +10 力量<br>
+                                    40% 額外金幣從怪物身上取得</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">橡樹之心</h5>
+                            <div>
+                                <p class="rune-text">
+                                    科(18) + 伐克斯(26) + 普爾(21) + 書爾(10)<br>
+                                    有四個凹槽的法杖/棍棒<br>
+                                    +3 到所有技能<br>
+                                    40% 高速施展<br>
+                                    +75% 對惡魔系生物的傷害<br>
+                                    +100 對惡魔系生物的準確率<br>
+                                    加 3-14 冰冷傷害<br>
+                                    7% 法力于擊中時偷取<br>
+                                    +10 敏捷<br>
+                                    生命恢復速度 +20<br>
+                                    增加最大法力 15%<br>
+                                    所有抗性 +30-40 (變動)<br>
+                                    等級 4 橡木智者 (25 聚氣)<br>
+                                    等級 14 烏鴉 (60 聚氣)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">飢荒</h5>
+                            <div>
+                                <p class="rune-text">
+                                    法爾(19) + 歐姆(27) + 歐特(9) + 喬(31)<br>
+                                    有四個凹槽的斧類/棍棒<br>
+                                    30% 提升攻擊速度<br>
+                                    320-370% 增強傷害 (變動)<br>
+                                    忽視目標防禦<br>
+                                    加 180-200 魔法傷害<br>
+                                    加 50-200 火焰傷害<br>
+                                    加 51-250 閃電傷害<br>
+                                    加 50-200 冰冷傷害<br>
+                                    12% 生命于擊中時偷取<br>
+                                    防止怪物自療<br>
+                                    +10 力量</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">誓約</h5>
+                            <div>
+                                <p class="rune-text">
+                                    夏(13) + 普爾(21) + 馬爾(23) + 盧姆(17)<br>
+                                    有四個凹槽的劍/斧/釘頭槌<br>
+                                    擊中敵人有30%機會施展等級20白骨之魂<br>
+                                    無法破壞<br>
+                                    +50% 攻擊準確率<br>
+                                    +210-340% 增強傷害 (變動)<br>
+                                    +75%對惡魔傷害<br>
+                                    +100對惡魔準確率<br>
+                                    防止怪物自療<br>
+                                    +10精力<br>
+                                    +10-15 魔法吸收 (變動)<br>
+                                    等級16狼獾之心 (20聚氣)<br>
+                                    等級17鋼鐵石魔 (14聚氣)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title">野獸</h5>
+                            <div>
+                                <p class="rune-text">
+                                    貝(30) + 特爾(3) + 烏姆(22) +<br>
+                                    馬爾(23) + 盧姆(17)<br>
+                                    有五個凹槽的斧類/權杖/鐵鎚<br>
+                                    等級9狂熱靈氣賦予<br>
+                                    40% 提升攻擊速度<br>
+                                    +240-270% 增強傷害 (變動)<br>
+                                    20% 機會出現壓碎性打擊<br>
+                                    25% 機會撕裂傷口<br>
+                                    +3 到熊人變化<br>
+                                    +3 到變形術<br>
+                                    防止怪物自療<br>
+                                    +25-40 力量 (變動)<br>
+                                    +10 精力<br>
+                                    +2 法力在每殺一個敵人後取得<br>
+                                    等級 13 召喚灰熊 (5 聚氣)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">末日</h5>
+                            <div>
+                                <p class="rune-text">
+                                    海爾(15) + 歐姆(27) + 烏姆(22) +<br>
+                                    羅(28) + 查姆(32)<br>
+                                    有五個凹槽的斧/長炳戰斧/鐵鎚<br>
+                                    擊中敵人時有5% 機會施展等級 18 火山<br>
+                                    等級 12 神聖冰凍靈氣賦予<br>
+                                    +2 到所有技能<br>
+                                    45% 提升攻擊速度<br>
+                                    330-370% 增強傷害 (變動)<br>
+                                    -40-60% 敵人冰冷抗性 (變動)<br>
+                                    20% 致命攻擊<br>
+                                    25% 機會撕裂傷口<br>
+                                    防止怪物自療<br>
+                                    凍結目標<br>
+                                    需求 -20%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">品牌</h5>
+                            <div>
+                                <p class="rune-text">
+                                    喬(31) + 羅(28) + 馬爾(23) + 古爾(25)<br>
+                                    有四個凹槽的遠射程武器<br>
+                                    被攻擊時35%的機會發動等級14傷害加深<br>
+                                    打擊時100%機會施展等級18的骨矛<br>
+                                    箭矢或十字弓彈火焰爆炸<br>
+                                    +260-340% 增強傷害 (變動)<br>
+                                    忽略標防禦力<br>
+                                    +20%額外準確率<br>
+                                    +280-330% 對惡魔傷害 (變動)<br>
+                                    20%致命攻擊<br>
+                                    防止怪物自療<br>
+                                    擊退</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">執法者</h5>
+                            <div>
+                                <p class="rune-text">
+                                    安姆(11) + 藍姆(20) + 科(18)<br>
+                                    有三個凹槽的劍/槌/權仗<br>
+                                    20% 打擊時施展等級15衰老<br>
+                                    等級18庇護所靈氣賦予<br>
+                                    -50% 目標防禦<br>
+                                    增加 150-210 火焰傷害<br>
+                                    增加 130-180 冰冷傷害<br>
+                                    7% 每次擊中吸取生命<br>
+                                    殺死怪物回復平靜<br>
+                                    +200-250 對遠距攻擊防禦 (變動)<br>
+                                    +10 敏捷<br>
+                                    75%額外金錢從敵人身上取得</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title">死神</h5>
+                            <div>
+                                <p class="rune-text">
+                                    海爾(15) + 愛爾(1) + 伐克斯(26) +<br>
+                                    歐特(9) + 古爾(25)<br>
+                                    有五個凹槽的劍/斧<br>
+                                    當死亡時100%產生44級的連鎖閃電<br>
+                                    25%打擊時產生18級的冰尖柱<br>
+                                    無法破壞<br>
+                                    300-385% 增強傷害 (變動)<br>
+                                    20%額外準確率增加<br>
+                                    +50 攻擊準確率<br>
+                                    1-50 閃電傷害<br>
+                                    7%偷取法力<br>
+                                    50%壓碎打擊<br>
+                                    +0-49%致命攻擊 (依角色等級乘0.5)<br>
+                                    +1 照亮範圍<br>
+                                    等級22鮮血石魔 (15聚氣)<br>
+                                    -20%需求</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">毀滅</h5>
+                            <div>
+                                <p class="rune-text">
+                                    伐克斯(26) + 羅(28) + 貝(30) +<br>
+                                    喬(31) + 科(18)<br>
+                                    有五個凹槽的長斧/劍<br>
+                                    23% 打擊時施展等級12火山<br>
+                                    5% 打擊時施展等級23熔漿巨岩<br>
+                                    100% 機會於你死亡時施展等級45隕石<br>
+                                    15% 受攻擊時施展等級22新星<br>
+                                    +350% 增強傷害<br>
+                                    忽視目標防禦<br>
+                                    增加 100-180 魔法傷害<br>
+                                    7% 每次擊中偷命<br>
+                                    20% 壓碎打擊<br>
+                                    20% 致命一擊<br>
+                                    防止怪物自療<br>
+                                    +10 敏捷</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">邊緣</h5>
+                            <div>
+                                <p class="rune-text">
+                                    特爾(3) + 塔爾(7) + 安姆(11)<br>
+                                    有三個凹槽的遠射程武器<br>
+                                    等級15刺針靈氣賦予<br>
+                                    +35% 攻擊準確率<br>
+                                    +320-380% 對惡魔傷害 (變動)<br>
+                                    +280% 對不死生物傷害<br>
+                                    +75毒素傷害5秒內<br>
+                                    於擊中時7%偷取生命<br>
+                                    防止怪物自療<br>
+                                    +5-10 轉為所有屬性 (變動)<br>
+                                    +2 法力在每殺死一名敵人之後取得<br>
+                                    降低商店賣價15%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title">最後的期許</h5>
+                            <div>
+                                <p class="rune-text">
+                                    喬(31) + 馬爾(23) + 喬(31) +<br>
+                                    瑟(29) + 喬(31) + 貝(30)<br>
+                                    有六個凹槽的劍/槌/斧<br>
+                                    打擊時有6%機率產生11級能量消減<br>
+                                    攻擊時10%機率產生18級偷取生命<br>
+                                    攻擊時20%產生20級充能彈<br>
+                                    等級17力量靈氣賦予<br>
+                                    +330-375% 增強傷害 (變動)<br>
+                                    忽視目標防禦<br>
+                                    60-70% 壓碎打擊 (變動)<br>
+                                    防止怪物自療<br>
+                                    擊中使怪物盲目<br>
+                                    +0-49% 更佳機會取得魔法裝備<br>
+                                    (依角色等級乘0.5) </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title">信心</h5>
+                            <div>
+                                <p class="rune-text">
+                                    歐姆(27) + 喬(31) + 藍姆(20) + 艾德(2)<br>
+                                    有四個凹槽的遠射程武器<br>
+                                    等級12-15狂熱靈氣賦予 (變動)<br>
+                                    +1-2 所有技能 (變動)<br>
+                                    +330% 增強傷害<br>
+                                    忽視目標防禦<br>
+                                    300% 額外攻擊準確率<br>
+                                    +75% 對不死生物傷害<br>
+                                    +50 對不死生物準確率<br>
+                                    所有抗性+15<br>
+                                    10% 復活為 復活的怪物<br>
+                                    75% 額外金錢自怪物取得</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">剛毅</h5>
+                            <div>
+                                <p class="rune-text">
+                                    艾爾(1) + 索爾(12) + 多爾(14) + 羅(28)<br>
+                                    有四個凹槽的武器<br>
+                                    打擊時20%機率產生15級寒冰裝甲<br>
+                                    打擊有25%機率使怪物逃跑<br>
+                                    25%高速施法速度<br>
+                                    20% 致命攻擊<br>
+                                    增加300%傷害<br>
+                                    增加200%防禦<br>
+                                    +50 攻擊準確率<br>
+                                    +9 最小傷害值<br>
+                                    +1-148 生命 (依角色等級乘1-1.5) (變動)<br>
+                                    所有抗性 +25-30 (變動)<br>
+                                    12% 傷害轉為法力<br>
+                                    +1照亮範圍</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">悔恨</h5>
+                            <div>
+                                <p class="rune-text">
+                                    愛斯(5) + 特爾(3) + 羅(28) +<br>
+                                    馬爾(23) + 拉爾(8)<br>
+                                    有五個凹槽的劍/斧<br>
+                                    35% 打擊時施展等級15毒牙<br>
+                                    +30-40% 增加攻擊速度 (變動)<br>
+                                    傷害 +340-400 (變動)<br>
+                                    忽視目標防禦<br>
+                                    -25% 目標防禦<br>
+                                    +1-185% 對惡魔傷害 (依角色等級乘1.875)<br>
+                                    增加 5-30 火焰傷害<br>
+                                    -20-25% 對敵人毒素系抗性 (變動)<br>
+                                    20% 致命一擊<br>
+                                    防止怪物自療<br>
+                                    +2 法力在每殺一個敵人後取得<br>
+                                    +11 生命在每殺一個敵人後取得</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title ">靈光</h5>
+                            <div>
+                                <p class="rune-text">
+                                    拉爾(8) + 特爾(3) + 塔爾(7) + 索爾(12)<br>
+                                    有四個凹槽的長斧/法仗/弓/弩<br>
+                                    等級12-17冥思靈氣賦予 (變動)<br>
+                                    +35% 高速施展速度<br>
+                                    +200-260% 增強傷害 (變動)<br>
+                                    +9 最小傷害<br>
+                                    180-250% 額外攻擊準確率 (變動)<br>
+                                    增加 5-30 火焰傷害<br>
+                                    +75 毒素傷害於每5秒作用<br>
+                                    +1-6 致命攻擊 (變動)<br>
+                                    +5 所有屬性<br>
+                                    +2 法力在每殺一個敵人後取得<br>
+                                    23% 更佳機會取得魔法裝備 </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card bg-light text-black"><br>
+                            <h5 class="card-title">和諧</h5>
+                            <div>
+                                <p class="rune-text">
+                                    特爾(3) + 伊司(6) + 索爾(12) + 科(18)<br>
+                                    有四個凹槽的遠射程武器<br>
+                                    等級10精力靈氣賦予<br>
+                                    +200-275%增強傷害 (變動)<br>
+                                    +9最小傷害<br>
+                                    +9最大傷害<br>
+                                    增加55-160的火焰傷害<br>
+                                    增加55-160的冰冷傷害<br>
+                                    增加55-160的閃電傷害<br>
+                                    +2-6 到女武神 (變動)<br>
+                                    +10敏捷<br>
+                                    法力重生20%<br>
+                                    +2點法力在每殺一個敵人後取得<br>
+                                    +2照亮範圍<br>
+                                    等級20重生 (25聚氣)</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!--footer的區塊-->
+        <footer>
+
+            <div class="container">
+                <div class='row'>
+                    <div class='col-md-4 text-warning'>
+                        <img src='../pictures/d2r.png' width='85'>
+                        <p>Diable II 歡迎您加入！</p>
+                    </div>
+                    <div class='col-md-4 text-warning'>
+                        <h4>連結</h4>
+                        <ul>
+                            <li><a href='index.html'>主頁</a></li>
+                            <li></li>
+                        </ul>
+                        <ul>
+                            <li><a href='faq.html'>常見問題</a></li>
+                            <li><a href='contact.html'>聯絡我們</a></li>
+                        </ul>
+                    </div>
+                    <div class='col-md-4 text-left text-warning'>
+                        <h4>聯絡我們</h4>
+                        <p>蘿格營地<br>
+                            Phone: 0800-888-888<br>
+                            E-Mail: <a href='#'>diable@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+</body>
+
+</html>

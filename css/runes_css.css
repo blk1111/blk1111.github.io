@@ -333,10 +333,19 @@ div > h3{
 	display:inline;
 	text-align: center;
 }
-.row{
-	padding:15px;
-}
+
 .card{
-	width: 25rem; 
+	padding: 0px;
+	margin: 0 5px;
 	height: 28rem;
+	width: 19.3rem;
 }
+.col-md-3{
+	height: 30rem;
+}
+.row-3{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
