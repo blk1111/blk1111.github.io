@@ -278,6 +278,14 @@ div > li > p{
 	display: block;
 	padding:30px 0px 0px 0px;
 }
+.rune img{
+	height: 40px;
+	width: 40px;
+	display: block;
+ 	margin-left: auto;
+  	margin-right: auto;
+  	width: 50%;
+}
 .runes{
 	display: flex;
 	flex-direction: row;
@@ -294,7 +302,9 @@ div > li > p{
 	border:5px solid yellow;
 
 }
-
+div ul li a {
+	color:orange;
+}
 div img,p{
 	width : 110px;
 	text-align:center;
@@ -339,6 +349,62 @@ div > h3{
 	margin: 0 5px;
 	height: 30rem;
 }
-.col-md-4{
+.col-md-4_4{
 	height: 32rem;
+}
+html, body {
+	height: 100%; /*外層高度100%*/
+	margin: 0;
+  }
+  .wrapper {
+	min-height: 100%; /*外層高度100%*/
+	margin-bottom: -50px; /*隨footer高度需做調整*/
+  }
+.container{
+	padding-bottom: 50px; /*避免文字超出瀏覽器時，內容區塊不會和footer打架*/
+}
+footer{
+
+	border-top: 1px solid rgba(0,0,0,0.09);
+	grid-row-start: 2;/*欄位從第二條橫線開始*/
+  grid-row-end: 3;/*欄位從第三條橫線結束*/
+}
+footer img{
+	margin-bottom: 30px;
+}
+footer h4{
+	font-size: 20px;
+    margin-bottom: 35px;
+
+}
+footer ul{
+	list-style: none;
+    padding: 0;
+}
+footer ul a{
+	color: #707070;
+}
+footer a{
+	color:#f05f5c;
+}
+footer a:hover{
+	color:#f05f5c;
+}
+footer ul a:hover{
+	color: #707070;
+	text-decoration: none;
+	opacity: 0.8;
+}
+footer ul li{
+	margin-bottom: 10px;
+}
+footer ul{
+	float: left;
+    margin-right: 46px;
+}
+.br1{
+	padding: 100px;
+}
+.br2{
+	
 }
