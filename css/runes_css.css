@@ -403,8 +403,19 @@ footer ul{
     margin-right: 46px;
 }
 .br1{
-	padding: 100px;
+	display: flex;
+    justify-content: center; 
+    align-items: center; 
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 .br2{
-	
+	padding: 30px;
+	top: -100%;
+	position: relative;
+	height: 50px;
+}
+.con{
+	min-height: 100%;
+    padding-bottom:50px;
 }
