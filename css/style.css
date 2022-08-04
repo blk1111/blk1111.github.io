@@ -289,4 +289,8 @@ header nav img{
 #img1:hover{
     opacity: 0.5; /*設為0.5*/
     filter: alpha(opacity=100); /* IE8 與更早的版本*/
+	display: block;
+	margin: auto;
+	
 }
+
