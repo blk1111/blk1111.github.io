@@ -419,3 +419,13 @@ footer ul{
 	min-height: 100%;
     padding-bottom:50px;
 }
+.text_up{
+	height: 300px;
+	width: 100%;
+}
+.lit{
+	font-size: 30px;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	padding: 30px;
+}
